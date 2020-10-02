@@ -249,24 +249,16 @@ let contributers=[
         "image":"images/Akshaj.jpg",
         "github":"https://github.com/akshaj65",
         "instagram":"https://www.instagram.com/akshaj_0.o/",
-	      "linkedin":""
+	"linkedin":""
     },
     {
-        "name":"Vital",
+        "name":"Vikram P S",
         "college":"SCEM",
-        "image":"images/Default.jpeg",
-        "github":"https://github.com/vviittaall123",
-        "linkedin":"https://www.linkedin.com/in/vittal-upadhyaya-259207193/",
-        "instagram":"https://www.instagram.com/vittal2823/"
-    },
-	{
-        "name":"M Jesta Kamath",
-        "college":"BMS College of Engineering",
-        "image":"images/jesta.PNG",
-        "github":"https://github.com/mjestakamath",
-        "linkedin":"https://www.linkedin.com/in/m-jesta-kamath-719192181/",
-        "instagram":"https://www.instagram.com/__.1twinkle.__"
-	}
+        "image":"images/vikram p s.jpg",
+        "github":"https://github.com/vikramps12",
+        "linkedin":"https://www.linkedin.com/in/vikram-p-s-b325991aa/",
+        "instagram":"https://www.instagram.com/psvikram01/"
+    }
  ]
 
 
@@ -290,6 +282,7 @@ function getPerson(person){
     let divi=document.createElement('div');
     divi.className="col-md-3 col-sm-6 col-xs-12 wow fadeIn";
     divi.setAttribute("data-wow-offset","50");
+    divi.setAttribute("data-wow-delay","1.3s");
     divi.innerHTML= '<div class="team-wrapper"><img src="'+person.image+'" class="img-responsive" onerror="this.src=\''+defaultimage+'\'" alt="User_image"><div class="team-des"><h4>'+person.name+'</h4><span>'+person.college+'</span><ul class="social-icon"><li><a href="'+person.linkedin+'" target="_blank" target="_blank" class="fa fa-linkedin"></a></li><li><a href="'+person.github+'" target="_blank" class="fa fa-github"></a></li><li><a href="'+person.instagram+'" target="_blank"  class="fa fa-instagram"></a></li></ul></div></div>';
     return divi;
 }
